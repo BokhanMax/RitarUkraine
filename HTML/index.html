@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
-    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>Ritar Ukraine</title>
     <meta name="description" content="Ritar Ukraine">
     <meta property="og:title" content="Ritar Ukraine">
@@ -32,34 +35,36 @@
     <meta name="msapplication-TileImage" content="/ico/mstile-144x144.png">
     <meta name="msapplication-config" content="/ico/browserconfig.xml">
     <meta name="theme-color" content="#ebebeb">
-    <script>new WOW().init();</script>
+    <!--script new WOW().init();-->
   </head>
   <header class="flexrow" id="header">
     <div id="logo"><img src="./img/ritarlogo.webp" alt="Ritar.Ua Logo"></div>
-    <nav id="menu">
-      <div class="menuwrapper flexrow">
-        <ul class="flexrow">
-          <li class="menuitem">Home</li>
-          <li class="menuitem menudropdown">About</li>
-          <li class="menuitem menudropdown">Catalog</li>
-          <li class="menuitem menudropdown">Service</li>
-          <li class="menuitem">News</li>
-          <li class="menuitem">Contacts</li>
-        </ul>
-      </div>
+    <nav class="flexrow" id="menu">
+      <ul class="flexrow">
+        <li class="menuitem">Home</li>
+        <li class="menuitem menudropdown">About</li>
+        <li class="menuitem menudropdown">Catalog</li>
+        <li class="menuitem menudropdown">Service</li>
+        <li class="menuitem">News</li>
+        <li class="menuitem">Contacts</li>
+      </ul>
     </nav>
     <div id="langswitch"> 
       <div class="langsmenu">
         <ul class="flexrow">
-          <li>EN </li>
-          <li>UA</li>
+          <li class="langitem">EN</li>
+          <li class="langitem">UA</li>
         </ul>
       </div>
     </div>
   </header>
   <main> 
     <section id="banner"> 
-      <div class="bannerwrapper"> <img class="bannerimg" src="./img/ritarbanner1.jpg"><img class="bannerimg" src="./img/ritarbanner2.jpg"><img class="bannerimg" src="./img/ritarbanner3.jpg"></div>
+      <div class="slider"> 
+        <div class="slide"><img class="bannerimg" src="./img/ritarbanner1.jpg"></div>
+        <div class="slide"><img class="bannerimg" src="./img/ritarbanner2.jpg"></div>
+        <div class="slide"><img class="bannerimg" src="./img/ritarbanner3.jpg"></div>
+      </div>
     </section>
     <section class="flexrow" id="categorieswall">
       <div class="categorycell flexcolumn"><a href="#"> <img class="categoryimg" src="./img/cat1.png">

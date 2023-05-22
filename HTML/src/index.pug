@@ -5,7 +5,10 @@ html(lang='en')
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width,initial-scale=1")
     link(rel="stylesheet", type="text/css", href="./css/style.min.css")
-    script(src="./assets/js/script.js")
+    link(rel="stylesheet", type="text/css", href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js")
+    script(src="./js/script.js")
     title Ritar Ukraine
     meta(name="description", content="Ritar Ukraine")
     meta(property="og:title", content="Ritar Ukraine")
@@ -32,30 +35,32 @@ html(lang='en')
     meta(name="msapplication-TileImage", content="/ico/mstile-144x144.png")
     meta(name="msapplication-config", content="/ico/browserconfig.xml")
     meta(name="theme-color", content="#ebebeb")
-    script new WOW().init();
+    //script new WOW().init();
   header#header.flexrow
     #logo
       img(src="./img/ritarlogo.webp", alt="Ritar.Ua Logo")
-    nav#menu
-      .menuwrapper.flexrow
-        ul.flexrow
-          li.menuitem Home
-          li.menuitem.menudropdown About
-          li.menuitem.menudropdown Catalog
-          li.menuitem.menudropdown Service
-          li.menuitem News
-          li.menuitem Contacts
+    nav#menu.flexrow
+      ul.flexrow
+        li.menuitem Home
+        li.menuitem.menudropdown About
+        li.menuitem.menudropdown Catalog
+        li.menuitem.menudropdown Service
+        li.menuitem News
+        li.menuitem Contacts
     #langswitch 
       .langsmenu
         ul.flexrow
-          li EN 
-          li UA
+          li.langitem EN
+          li.langitem UA
   main 
     section#banner 
-      .bannerwrapper 
-        img(src="./img/ritarbanner1.jpg").bannerimg
-        img(src="./img/ritarbanner2.jpg").bannerimg
-        img(src="./img/ritarbanner3.jpg").bannerimg
+      .slider 
+        .slide
+          img(src="./img/ritarbanner1.jpg").bannerimg
+        .slide
+          img(src="./img/ritarbanner2.jpg").bannerimg
+        .slide
+          img(src="./img/ritarbanner3.jpg").bannerimg
     section#categorieswall.flexrow
       .categorycell.flexcolumn
         a(href="#") 
