@@ -10,16 +10,16 @@ html(lang='en')
     meta(name="description", content="Ritar Ukraine")
     meta(property="og:title", content="Ritar Ukraine")
     meta(property="og:site_name", content="Ritar Ukraine")
-    meta(property="og:url", content="https://ritar.com.ua")
+    meta(property="og:url", content="https://ritar.ua")
     meta(property="og:description", content="Ritar Ukraine")
     meta(property="og:type", content="website")
-    meta(property="og:image", content="https://ritar.com.ua/ogimage.png")
+    meta(property="og:image", content="https://ritar.ua/ogimage.png")
     meta(name="twitter:card", content="summary_large_image")
-    meta(property="twitter:domain", content="ritar.com.ua")
-    meta(property="twitter:url", content="https://ritar.com.ua/")
+    meta(property="twitter:domain", content="ritar.ua")
+    meta(property="twitter:url", content="https://ritar.ua/")
     meta(name="twitter:title", content="Ritar Ukraine")
     meta(name="twitter:description", content="Ritar Ukraine")
-    meta(name="twitter:image", content="https://ritar.com.ua/ogimage.png")
+    meta(name="twitter:image", content="https://ritar.ua/ogimage.png")
     link(rel="apple-touch-icon", sizes="180x180", href="/ico/apple-touch-icon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="./ico/favicon-32x32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="./ico/favicon-16x16.png")
@@ -33,9 +33,146 @@ html(lang='en')
     meta(name="msapplication-config", content="/ico/browserconfig.xml")
     meta(name="theme-color", content="#ebebeb")
     script new WOW().init();
-  header#header  
+  header#header.flexrow
+    #logo
+      img(src="./img/ritarlogo.webp", alt="Ritar.Ua Logo")
+    nav#menu
+      .menuwrapper.flexrow
+        ul.flexrow
+          li.menuitem Home
+          li.menuitem.menudropdown About
+          li.menuitem.menudropdown Catalog
+          li.menuitem.menudropdown Service
+          li.menuitem News
+          li.menuitem Contacts
+    #langswitch 
+      .langsmenu
+        ul.flexrow
+          li EN 
+          li UA
   main 
     section#banner 
-      .banner-wrapper 
-        .img
-  footer#footer
+      .bannerwrapper 
+        img(src="./img/ritarbanner1.jpg").bannerimg
+        img(src="./img/ritarbanner2.jpg").bannerimg
+        img(src="./img/ritarbanner3.jpg").bannerimg
+    section#categorieswall.flexrow
+      .categorycell.flexcolumn
+        img(src="./img/cat1.png").categoryimg
+        .categorycellhead Energy Storage Battery
+        .categorcelldescr Used in Solar/Wind Energy, Telecom, UPS, Control Systems…
+      .categorycell.flexcolumn
+        img(src="./img/cat2.png").categoryimg
+        .categorycellhead Reserve Power Battery
+        .categorcelldescr For UPS/EPS, Telecom, emergency, power tools, medical…
+      .categorycell.flexcolumn
+        img(src="./img/cat3.png").categoryimg
+        .categorycellhead Motive Power Battery
+        .categorcelldescr Used in Electric vehicles, golf cars, wheelchairs, forklifts…
+      .categorycell.flexcolumn
+        img(src="./img/cat4.png").categoryimg
+        .categorycellhead Energy Lithium Battery
+        .categorcelldescr For energy storage and UPS
+    section#productscarousel.flexrow
+      .productitem.flexcolumn
+        img(src="./img/product1.jpg").productimg
+        .productitemhead Solid-state Lead Battery (VRLA Tubular Gel Battery )
+        .productitemcat OPzV Series
+      .productitem.flexcolumn
+        img(src="./img/product2.jpg").productimg
+        .productitemhead Deep Cycle GEL VRLA Batteries
+        .productitemcat DG Series
+      .productitem.flexcolumn
+        img(src="./img/product3.jpg").productimg
+        .productitemhead High Rate Discharge VRLA Batteries
+        .productitemcat HR Series
+      .productitem.flexcolumn
+        img(src="./img/product4.jpg").productimg
+        .productitemhead AGM 2V Series VRLA Batteries from 200Ah to 3000Ah
+        .productitemcat RL Series
+    section#aboutblock.flexrow
+      .aboutleft.flexcolumn
+        h2 Ritar International Group
+        p Ritar Power is a professional battery company listed in NASDAQ. Established in May 2002, Ritar manufactures and sells environmentally friendly Lead Acid batteries and Lithium batteries. Now Ritar covers battery, battery charger, handset screen, etc.
+      .aboutright 
+        img(src="./img/about.png", alt="About Ritar Ua")
+    section#batteries.flexrow
+      .batteriesleft.flexcolumn
+        h3 BATTERY
+        p lead acid battery
+        p lithium battery
+      .batteriesright.flexcolumn
+        .batteriesright_p
+          p Ritar power is a high-tech enterprise headquartered in Nanshan District, Shenzhen, China and has 3 manufacturing bases in Shenzhen, Hengyang (China) and Vietnam, with over 2,000 employees, producing full range of AGM, GEL, Deep Cycle, Lead Carbon, OPzV, OPzS, Traction (DIN/BS) Lead Acid batteries and Lithium batteries for all kinds of industrial applications like Solar Systems, UPS, Telecom, Data Centers, Rail Transit, Motive Vehicles, etc.
+        .batteriesright_address.flexrow
+          img(src="./img/address.png")
+          p 10th Floor, Building 1C, Shenzhen Software Industry Base, No.81, Gaoxin South 10th Road, Nanshan District, Shenzhen, Guangdong, China 518063
+        .batteriesright_buttons.flexrow
+          a.button-red Read more 
+          a.button-white Contacts 
+    section#newsblock.flexrow
+      .newsblockleft.flexcolumn
+        h2 Latest news 
+        p Find out the latest innovation of Ritar International Group here.
+        a.button-white Find out more
+      .newsblockright.flexrow
+        .newsblock_cell.flexcolumn
+          img(src="./img/blog1.jpg").newsblockimg
+          p.newsblockhead Good news! Vietnam RITARs new workshop starts construction!
+          p.newsblockdescr Good news: on February 16, Ritar Power (Vietnam) Company Limited...
+        .newsblock_cell.flexcolumn
+          img(src="./img/blog2.jpg").newsblockimg
+          p.newsblockhead Environmental Protection of Ritar Vietnam Factory Won Recognition
+          p.newsblockdescr On October 7, 2020, Vietnam Ministry of Environmental Protection reviewed...
+        .newsblock_cell.flexcolumn
+          img(src="./img/blog3.webp").newsblockimg
+          p.newsblockhead Ritar is awarded "the Best Energy Storage Battery Supplier"
+          p.newsblockdescr Ritar was awarded "the Best Energy Storage Battery Supplier" and "the...
+  footer#footer.flexrow
+    .footermenucolumn
+      .footerhead About Ritar
+      p.footermenu Corporate Profile
+      p.footermenu Corporate Philosophy
+      p.footermenu Production Strength
+      p.footermenu Milestones
+      p.footermenu Certificates
+      p.footermenu Video
+    .footermenucolumn
+      .footerhead Products
+      p.footermenu Energy Storage Battery
+      p.footermenu Motive Power Battery
+      p.footermenu Reserve Power Battery
+      p.footermenu Lithium Battery
+      p.footermenu Solar Power System
+      p.footermenu BESS
+    .footermenucolumn
+      .footerhead Service
+      p.footermenu Resources Download
+      p.footermenu FAQ
+      p.footermenu Installation and Maintenance
+      p.footermenu Customer Feedback
+      p.footermenu  
+      p.footermenu  
+    .footermenucolumn
+      .footerhead News
+      p.footermenu Company News
+      p.footermenu Industry News
+      p.footermenu Company Exhibition
+      p.footermenu  
+      p.footermenu  
+      p.footermenu  
+    .footermenucolumn
+      .footerhead
+      .footercontacts 
+        .footercontacts_singleblock
+          img(src="./img/footeraddress.png")
+          p Headquarters：10th Floor, Building 1C, Shenzhen Software Industry Base, Ukraine
+        .footercontacts_singleblock
+          img(src="./img/footerphone.png")
+          p Tel：+38 048 3398166
+        .footercontacts_singleblock
+          img(src="./img/footerfax.png")
+          p Fax：+86-755-83475180
+        .footercontacts_singleblock
+          img(src="./img/footeremail.png")
+          p E-mail: sales@ritarpower.ua
