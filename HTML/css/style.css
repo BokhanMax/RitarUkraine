@@ -258,7 +258,13 @@ footer {
   margin: 5% 0;
   color: #8F8F92;
 }
-
+.footermenucolumn a {
+  color: #8F8F92;
+  text-decoration: none;
+}
+.footermenucolumn a:hover {
+  color: #fff;
+}
 .footermenucolumn:last-child {
   width: 28%;
   padding: 0 1%;
