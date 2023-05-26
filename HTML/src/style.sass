@@ -70,9 +70,17 @@ footer
     padding: 0 1%
 .footerhead
     font-weight: 600
-    margin-bottom: 10%
+    margin-bottom: 16%
     font-size: 1.1em
     color: #fff
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        top: 30px
+        left: 0
+        width: 25px
+        border: 1px solid red
 .footercontacts_singleblock
     display: flex
     align-items: flex-start
