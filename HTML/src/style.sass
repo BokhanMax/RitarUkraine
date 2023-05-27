@@ -57,7 +57,7 @@ ul
 /* Categories */
 
 #categorieswall
-    padding: 4%
+    padding: 4% 4% 2% 4%
 .categorycell
     width: 25%
     & a
@@ -86,6 +86,48 @@ ul
     font-size: 1em
     text-align: center
     line-height: 1.5em
+
+/* Product Carousel */
+
+#productscarousel
+    margin: 0 4% 6% 4%
+.productitem
+    justify-content: space-evenly
+.productitemhead
+    font-size: 1.2em
+    text-align: center
+    margin: 0 0 5% 0
+.productitemcat
+    color: #C1162A
+    font-size: 1.3em
+    font-weight: 600
+    margin-left: 5%
+
+/* About */
+
+#aboutblock
+    background-color: #F3F4F6
+    padding: 6% 0 0 5%
+.aboutleft
+    width: 35%
+    position: relative
+    & p
+        line-height: 1.8em
+        margin-top: 6%
+    & h2 
+        color: #4D4D4D
+        font-size: 2em
+        font-weight: 400
+        &::after
+            content: ""
+            position: absolute
+            top: 75px
+            left: 0
+            width: 55px
+            border: 1px solid #C1162A
+.aboutright
+    width: 65%
+    text-align: right
 
 /* Footer */
 
@@ -120,7 +162,7 @@ footer
         top: 35px
         left: 0
         width: 30px
-        border: 1px solid red
+        border: 1px solid #C1162A
 .footercontacts_singleblock
     display: flex
     align-items: flex-start
