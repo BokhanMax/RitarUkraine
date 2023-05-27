@@ -196,6 +196,11 @@ body {
   display: flex;
   flex-direction: row;
 }
+@media only screen and (max-width: 450px) {
+  .flexrow {
+    flex-direction: column;
+  }
+}
 
 .flexcolumn {
   display: flex;
@@ -218,6 +223,12 @@ ul {
   font-size: 1.2em;
   text-decoration: none;
 }
+@media only screen and (max-width: 450px) {
+  .button-red {
+    font-size: 1em;
+    padding: 4% 10%;
+  }
+}
 
 .button-white {
   background-color: white;
@@ -227,12 +238,23 @@ ul {
   font-size: 1.2em;
   text-decoration: none;
 }
+@media only screen and (max-width: 450px) {
+  .button-white {
+    font-size: 1em;
+    padding: 4% 10%;
+  }
+}
 
 /* Header */ 
 #header {
   justify-content: space-between;
   align-items: center;
   padding: 1% 3%;
+}
+@media only screen and (max-width: 450px) {
+  #header {
+    flex-direction: row;
+  }
 }
 
 .menuitem {
@@ -265,9 +287,19 @@ ul {
 #categorieswall {
   padding: 4% 4% 2% 4%;
 }
+@media only screen and (max-width: 450px) {
+  #categorieswall {
+    padding: 2%;
+  }
+}
 
 .categorycell {
   width: 25%;
+}
+@media only screen and (max-width: 450px) {
+  .categorycell {
+    width: 100%;
+  }
 }
 .categorycell a {
   display: flex;
@@ -319,6 +351,11 @@ ul {
   text-align: center;
   margin: 0 0 5% 0;
 }
+@media only screen and (max-width: 450px) {
+  .productitemhead {
+    text-align: left;
+  }
+}
 
 .productitemcat {
   color: #C1162A;
@@ -326,16 +363,31 @@ ul {
   font-weight: 600;
   margin-left: 5%;
 }
+@media only screen and (max-width: 450px) {
+  .productitemcat {
+    margin-left: 0;
+  }
+}
 
 /* About */
 #aboutblock {
   background-color: #F3F4F6;
   padding: 6% 0 0 5%;
 }
+@media only screen and (max-width: 450px) {
+  #aboutblock {
+    padding: 2%;
+  }
+}
 
 .aboutleft {
   width: 35%;
   position: relative;
+}
+@media only screen and (max-width: 450px) {
+  .aboutleft {
+    width: 100%;
+  }
 }
 .aboutleft p {
   line-height: 1.8em;
@@ -359,6 +411,11 @@ ul {
   width: 65%;
   text-align: right;
 }
+@media only screen and (max-width: 450px) {
+  .aboutright {
+    width: 100%;
+  }
+}
 
 /* Batteries Block */
 #batteries {
@@ -371,6 +428,11 @@ ul {
   background-color: #F3F4F6;
   width: 45%;
   padding: 0 0 0 7%;
+}
+@media only screen and (max-width: 450px) {
+  .batteriesleft {
+    padding: 0 0 0 17%;
+  }
 }
 .batteriesleft p {
   font-weight: 600;
@@ -387,6 +449,11 @@ ul {
   width: 55px;
   border: 1px solid #C1162A;
 }
+@media only screen and (max-width: 450px) {
+  .batteriesleft h3:after {
+    left: 0;
+  }
+}
 
 .batteriesright {
   background-color: white;
@@ -401,12 +468,34 @@ ul {
   align-items: center;
   margin: 1% 0 4% 0;
 }
+@media only screen and (max-width: 450px) {
+  .batteriesright_address p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .batteriesright_address {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 .batteriesright_address img {
   margin-right: 1%;
+}
+@media only screen and (max-width: 450px) {
+  .batteriesright_address img {
+    margin-right: 2%;
+  }
 }
 
 .batteriesright_buttons {
   gap: 3%;
+}
+@media only screen and (max-width: 450px) {
+  .batteriesright_buttons {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 /* News Section */
@@ -417,6 +506,11 @@ ul {
 .newsblockleft {
   position: relative;
   align-items: center;
+}
+@media only screen and (max-width: 450px) {
+  .newsblockleft {
+    padding: 2% 0 8% 0;
+  }
 }
 .newsblockleft h2 {
   color: #4D4D4D;
@@ -430,6 +524,11 @@ ul {
   left: 45%;
   width: 30px;
   border: 1px solid #C1162A;
+}
+@media only screen and (max-width: 450px) {
+  .newsblockleft h2::after {
+    top: 30%;
+  }
 }
 .newsblockleft p {
   text-align: center;
@@ -452,6 +551,11 @@ ul {
 
 .newsblock_cell {
   align-items: center;
+}
+@media only screen and (max-width: 450px) {
+  .newsblock_cell {
+    margin-bottom: 5%;
+  }
 }
 
 .newsblockhead {
@@ -481,6 +585,11 @@ footer {
   width: 18%;
   padding: 0 3%;
 }
+@media only screen and (max-width: 450px) {
+  .footermenucolumn {
+    width: 100%;
+  }
+}
 .footermenucolumn p {
   margin: 5% 0;
   color: #8F8F92;
@@ -496,6 +605,11 @@ footer {
   width: 28%;
   padding: 0 1%;
 }
+@media only screen and (max-width: 450px) {
+  .footermenucolumn:last-child {
+    display: none;
+  }
+}
 
 .footerhead {
   font-weight: 600;
@@ -504,6 +618,11 @@ footer {
   color: #fff;
   position: relative;
 }
+@media only screen and (max-width: 450px) {
+  .footerhead {
+    margin-bottom: 1%;
+  }
+}
 .footerhead::after {
   content: "";
   position: absolute;
@@ -511,6 +630,11 @@ footer {
   left: 0;
   width: 30px;
   border: 1px solid #C1162A;
+}
+@media only screen and (max-width: 450px) {
+  .footerhead::after {
+    display: none;
+  }
 }
 
 .footercontacts_singleblock {

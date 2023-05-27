@@ -19,6 +19,8 @@ body
 .flexrow
     display: flex
     flex-direction: row
+    @include respond(mobile)
+        flex-direction: column
 .flexcolumn
     display: flex
     flex-direction: column
@@ -33,6 +35,9 @@ ul
     border: 1px solid #C1162A
     font-size: 1.2em
     text-decoration: none
+    @include respond(mobile)
+        font-size: 1em
+        padding: 4% 10%
 .button-white
     background-color: white
     padding: 1.5% 7%
@@ -40,6 +45,9 @@ ul
     border: 1px solid #C1162A
     font-size: 1.2em
     text-decoration: none
+    @include respond(mobile)
+        font-size: 1em
+        padding: 4% 10%
 
 /* Header */ 
 
@@ -47,6 +55,8 @@ ul
     justify-content: space-between
     align-items: center
     padding: 1% 3%
+    @include respond(mobile)
+        flex-direction: row
 .menuitem
     margin: 0 7%
     font-weight: 600
@@ -72,8 +82,12 @@ ul
 
 #categorieswall
     padding: 4% 4% 2% 4%
+    @include respond(mobile)
+        padding: 2%
 .categorycell
     width: 25%
+    @include respond(mobile)
+        width: 100%
     & a
         display: flex
         flex-direction: column
@@ -111,20 +125,28 @@ ul
     font-size: 1.2em
     text-align: center
     margin: 0 0 5% 0
+    @include respond(mobile)
+        text-align: left
 .productitemcat
     color: #C1162A
     font-size: 1.3em
     font-weight: 600
     margin-left: 5%
+    @include respond(mobile)
+        margin-left: 0
 
 /* About */
 
 #aboutblock
     background-color: #F3F4F6
     padding: 6% 0 0 5%
+    @include respond(mobile)
+        padding: 2%
 .aboutleft
     width: 35%
     position: relative
+    @include respond(mobile)
+        width: 100%
     & p
         line-height: 1.8em
         margin-top: 6%
@@ -142,6 +164,8 @@ ul
 .aboutright
     width: 65%
     text-align: right
+    @include respond(mobile)
+        width: 100%
 
 /* Batteries Block */
 
@@ -153,6 +177,8 @@ ul
     background-color: #F3F4F6
     width: 45%
     padding: 0 0 0 7%
+    @include respond(mobile)
+        padding: 0 0 0 17%
     & p 
         font-weight: 600
     & h3
@@ -165,6 +191,8 @@ ul
             left: 9%
             width: 55px
             border: 1px solid #C1162A
+            @include respond(mobile)
+                left: 0
 .batteriesright
     background-color: white
     padding: 4%
@@ -173,10 +201,21 @@ ul
 .batteriesright_address
     align-items: center
     margin: 1% 0 4% 0
+    & p 
+        @include respond(mobile)
+            margin: 0
+    @include respond(mobile)
+        flex-direction: row
+        align-items: flex-start
     & img
         margin-right: 1%
+        @include respond(mobile)
+            margin-right: 2%
 .batteriesright_buttons
     gap: 3%
+    @include respond(mobile)
+        flex-direction: row
+        gap: 0
 
 /* News Section */
 
@@ -185,6 +224,8 @@ ul
 .newsblockleft
     position: relative
     align-items: center
+    @include respond(mobile)
+        padding: 2% 0 8% 0
     & h2 
         color: #4D4D4D
         font-size: 2em
@@ -196,6 +237,8 @@ ul
             left: 45%
             width: 30px
             border: 1px solid #C1162A
+            @include respond(mobile)
+                top: 30%
     & p
         text-align: center
         line-height: 2em
@@ -211,6 +254,8 @@ ul
         margin: 0.5em
 .newsblock_cell
     align-items: center
+    @include respond(mobile)
+        margin-bottom: 5%
 .newsblockhead
     font-weight: 600
     font-size: 1.1em
@@ -233,6 +278,8 @@ footer
     flex-direction: column
     width: 18%
     padding: 0 3%
+    @include respond(mobile)
+        width: 100%
     & p 
         margin: 5% 0
         color: #8F8F92
@@ -244,12 +291,16 @@ footer
     &:last-child
         width: 28%
         padding: 0 1%
+        @include respond(mobile)
+            display: none
 .footerhead
     font-weight: 600
     margin-bottom: 16%
     font-size: 1.1em
     color: #fff
     position: relative
+    @include respond(mobile)
+        margin-bottom: 1%
     &::after
         content: ""
         position: absolute
@@ -257,6 +308,8 @@ footer
         left: 0
         width: 30px
         border: 1px solid #C1162A
+        @include respond(mobile)
+            display: none
 .footercontacts_singleblock
     display: flex
     align-items: flex-start
