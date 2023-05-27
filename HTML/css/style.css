@@ -216,6 +216,7 @@ ul {
   color: white;
   border: 1px solid #C1162A;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .button-white {
@@ -224,6 +225,7 @@ ul {
   color: #C1162A;
   border: 1px solid #C1162A;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 /* Header */ 
