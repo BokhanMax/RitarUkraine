@@ -272,17 +272,13 @@ ul {
 }
 
 /* Banner */
-#banner {
-  overflow: hidden;
-}
-
-.bannerimg {
-  display: block;
-  max-width: 100%;
-  max-height: 550px;
-  overflow: hidden;
-}
-
+/*#banner
+ *  /*overflow: hidden */
+/*.bannerimg
+ *  /*display: block*/
+ *  /*max-width: 100%
+ *  /*max-height: 550px
+ *  /*overflow: hidden */
 /* Categories */
 #categorieswall {
   padding: 4% 4% 2% 4%;
